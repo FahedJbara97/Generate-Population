@@ -279,9 +279,11 @@ import java.util.Scanner;
     	
     	for(int h=0;h<numOfItems;h++) {
     		Random rand = new Random();
-            int n = rand.nextDouble();
+            int n = rand.nextInt(numOfItems/3);
+    		n += 1;
     		weight.add(n);
     	}
+
     	for(int h=0;h<numOfItems;h++) {
     		Random rand = new Random();
     		int n = rand.nextInt((int) (numOfItems * 0.8));
